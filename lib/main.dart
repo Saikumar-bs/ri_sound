@@ -34,7 +34,8 @@ class MyApp extends StatelessWidget {
                 color: Colors.red,
                 size: 30.0,
               ),
-              tooltip: 'Favorites',
+              tooltip: ''
+                  'Favorites',
               onPressed: () {},
             ),
           ],
@@ -42,12 +43,9 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              SizedBox(
-                height: 20.0,
-              ),
               Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
+                margin: EdgeInsets.fromLTRB(10.0, 12.0, 10.0, 6.0),
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 height: 45.0,
                 decoration: BoxDecoration(
@@ -59,6 +57,26 @@ class MyApp extends StatelessWidget {
                     enabledBorder: InputBorder.none,
                     focusedBorder: InputBorder.none,
                   ),
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(6.0, 6.0, 3.0, 3.0),
+                        child: Image.asset('images/antelope.png'),
+                      ),
+                    ),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(6.0, 6.0, 3.0, 3.0),
+                        child: Expanded(
+                          child: Image.asset('images/bee.png'),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
