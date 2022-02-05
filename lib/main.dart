@@ -60,21 +60,108 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Row(
+                margin: EdgeInsets.all(6.0),
+                padding: const EdgeInsets.all(6.0),
+                child: Column(
                   children: <Widget>[
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(6.0, 6.0, 3.0, 3.0),
-                        child: Image.asset('images/antelope.png'),
-                      ),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(6.0, 6.0, 3.0, 3.0),
-                        child: Expanded(
-                          child: Image.asset('images/bee.png'),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: <Widget>[
+                              Image.asset('images/antelope.png'),
+                              Container(
+                                width: 200,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                                child: Text(
+                                  'Antelope',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
+                        SizedBox(width: 10.0),
+                        Expanded(
+                          child: Column(
+                            children: <Widget>[
+                              Image.asset('images/bee.png'),
+                              Container(
+                                width: 200,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                                child: Text(
+                                  'Bee',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 15.0),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: <Widget>[
+                              Image.asset('images/eagle.png'),
+                              Container(
+                                width: 200,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                                child: Text(
+                                  'Eagle',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 10.0),
+                        Expanded(
+                          child: Column(
+                            children: <Widget>[
+                              Image.asset('images/elephant.png'),
+                              Container(
+                                width: 200,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                                child: Text(
+                                  'Elephant',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
