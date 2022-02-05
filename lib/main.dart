@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'favorites_screen.dart';
 
 void main() {
   runApp(MyApp());
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -34,9 +42,15 @@ class MyApp extends StatelessWidget {
                 color: Colors.red,
                 size: 30.0,
               ),
-              tooltip: ''
-                  'Favorites',
-              onPressed: () {},
+              tooltip: 'My Favorites',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FavoritesScreen(),
+                  ),
+                );
+              },
             ),
           ],
         ),
