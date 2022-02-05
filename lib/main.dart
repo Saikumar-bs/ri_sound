@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.red,
                 size: 30.0,
               ),
-              tooltip: 'My Favorites',
+              tooltip: 'Favorites',
               onPressed: () {},
             ),
           ],
