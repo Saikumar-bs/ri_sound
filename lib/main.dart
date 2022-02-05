@@ -71,6 +71,7 @@ class MyApp extends StatelessWidget {
                             children: <Widget>[
                               Image.asset('images/antelope.png'),
                               Container(
+                                padding: EdgeInsets.all(3.0),
                                 width: 200,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
@@ -94,6 +95,7 @@ class MyApp extends StatelessWidget {
                             children: <Widget>[
                               Image.asset('images/bee.png'),
                               Container(
+                                padding: EdgeInsets.all(3.0),
                                 width: 200,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
@@ -121,6 +123,7 @@ class MyApp extends StatelessWidget {
                             children: <Widget>[
                               Image.asset('images/eagle.png'),
                               Container(
+                                padding: EdgeInsets.all(3.0),
                                 width: 200,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
@@ -144,6 +147,7 @@ class MyApp extends StatelessWidget {
                             children: <Widget>[
                               Image.asset('images/elephant.png'),
                               Container(
+                                padding: EdgeInsets.all(3.0),
                                 width: 200,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
