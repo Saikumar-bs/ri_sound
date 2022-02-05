@@ -65,6 +65,10 @@ flutter:
     - images/dog.jpg
     - images/eagle.png
     - images/elephant.png
+    - images/macaw.png
+    - images/toucan.png
+    - images/peacock.png
+    - images/frog.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
